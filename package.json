@@ -1,0 +1,21 @@
+{
+	"name": "beatphobia",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest",
+		"cf-typegen": "wrangler types"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@cloudflare/vitest-pool-workers": "^0.5.2",
+		"@cloudflare/workers-types": "^4.20241022.0",
+		"typescript": "^5.5.2",
+		"vitest": "2.0.5",
+		"wrangler": "^3.60.3"
+	},
+	"packageManager": "pnpm@8.6.9+sha512.2cf11a086be557875519e25e1ea8bfa4247f4844e8a2a99272fdb072bd204ea19479ba64b75c3d4c8117d1ac0b3212cedbda7ba5c5dfcf964ee7d07bd139dcd3"
+}

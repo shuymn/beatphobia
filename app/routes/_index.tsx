@@ -1,4 +1,7 @@
-import type { MetaFunction } from '@remix-run/node';
+import type { MetaFunction } from '@remix-run/cloudflare';
+
+import darkLogo from '../images/logo-dark.png';
+import lightLogo from '../images/logo-light.png';
 
 export const meta: MetaFunction = () => {
 	return [{ title: 'New Remix App' }, { name: 'description', content: 'Welcome to Remix!' }];
@@ -13,8 +16,8 @@ export default function Index() {
 						Welcome to <span className="sr-only">Remix</span>
 					</h1>
 					<div className="h-[144px] w-[434px]">
-						<img src="/logo-light.png" alt="Remix" className="block w-full dark:hidden" />
-						<img src="/logo-dark.png" alt="Remix" className="hidden w-full dark:block" />
+						<img src={lightLogo} alt="Remix" className="block w-full dark:hidden" />
+						<img src={darkLogo} alt="Remix" className="hidden w-full dark:block" />
 					</div>
 				</header>
 				<nav className="flex flex-col items-center justify-center gap-4 rounded-3xl border border-gray-200 p-6 dark:border-gray-700">
